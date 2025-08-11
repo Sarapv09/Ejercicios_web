@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FFE7E3;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+.game {
+  display: flex;
+  gap: 20px;
+    justify-content: center;
+}
+
+.player1, .player2 {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  width: 20%;
+  text-align: center;
+  margin: 30px;
+}
+
+.game-info {
+  margin: 20px;
+  padding: 20px;
+  font-size: 1.2em;
+  color: #FF2D00;
+}
+
+#reset_game {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#player1_attack, #player2_attack {
+  padding: 10px 20px;
+  background-color: #FF2D00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
