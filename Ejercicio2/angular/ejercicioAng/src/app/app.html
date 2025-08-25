@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego 1vs1</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Juego 1vs1</h1>
+    <p>Este es el juego con el pondrás en juego a tu suerte y la tus amigos</p>
+    <p>
+      El juego es muy sencillo, solo debes darle click al botón de "atacar" y tu
+      contrincante perderá 1, 2, o 3 vidas dependiendo de quien tenga mejor suerte
+    </p>
+  </div>
+
+  <div class="game">
+    <div class="player1">
+      <h2>Jugador 1</h2>
+      <p>Vidas: {{ vidas1 }}</p>
+      <button (click)="atacar(1)" [disabled]="turno !== 1">Atacar</button>
+    </div>
+
+    <div class="player2">
+      <h2>Jugador 2</h2>
+      <p>Vidas: {{ vidas2 }}</p>
+      <button (click)="atacar(2)" [disabled]="turno !== 2">Atacar</button>
+    </div>
+  </div>
+
+  <div class="game_info">
+    <p>{{ mensaje }}</p>
+  </div>
+
+  <div class="reset_game">
+    <button (click)="reiniciar()">Reiniciar Juego</button>
+  </div>
+
+</body>
+</html>
