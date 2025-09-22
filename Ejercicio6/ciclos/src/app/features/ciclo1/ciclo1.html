@@ -1,0 +1,7 @@
+<h2>OnChangesComponent</h2>
+<p>Contador actual: {{ contador }}</p>
+
+<!-- Botón para simular cambios si se usa dentro de un padre -->
+<button (click)="contador = (contador || 0) + 1">
+  Incrementar contador
+</button>
